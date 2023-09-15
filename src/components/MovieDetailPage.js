@@ -152,7 +152,7 @@ const MovieDetailPage = () => {
                   {movieData.vote_count >= 1000 &&
                   movieData.vote_count < 1000000
                     ? (movieData.vote_count / 1000).toFixed(1) + 'K'
-                    : movieData.vote_count.toString()}
+                    : movieData.vote_count}
                 </p>
               </div>
               <button className='movie-showtimes-button'>
