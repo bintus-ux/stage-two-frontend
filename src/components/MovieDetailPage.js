@@ -148,7 +148,11 @@ const MovieDetailPage = () => {
                   class='fa-solid fa-star fa-lg'
                   style={{ color: 'rgb(254, 224, 29)' }}></i>
                 <p>
-                  <span>8.5</span>|350k
+                  <span>{movieData.vote_average}</span>|
+                  {movieData.vote_count >= 1000 &&
+                  movieData.vote_count < 1000000
+                    ? (movieData.vote_count / 1000).toFixed(1) + 'K'
+                    : movieData.vote_count.toString()}
                 </p>
               </div>
               <button className='movie-showtimes-button'>

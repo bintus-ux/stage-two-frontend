@@ -373,7 +373,7 @@ line-height: normal;
 .movie-detail-wrapper {
   display: flex;
   flex-direction: row;
-  width: 1198px;
+  max-width: 100%;
 }
 .movie-detail-column {
   width: 70%;
@@ -382,7 +382,7 @@ text-align: left;
 padding: 10px;
 }
 .movie-options-section {
-  width: 30%;
+  max-width: 100%;
 }
 .movie-overview {
   color: #333;
@@ -537,7 +537,7 @@ border-radius: 10px;
 margin-top: 20px;
 }
 .footer-wrapper {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -569,6 +569,7 @@ margin-top: 20px;
 @media screen and (max-width: 768px) {
   .footer-wrapper{
     padding: 0 20px;
+    margin-top: 150px;
   }
   .footer-info-wrapper {
     font-size: 17px;

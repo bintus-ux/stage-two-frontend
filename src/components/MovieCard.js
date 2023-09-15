@@ -40,7 +40,7 @@ const MovieCard = ({ movie }) => {
         <Box className='card-body-logo'>
           <span className='imdb-wrapper'>
             <img src='imdb.png' alt='imdb logo' />
-            <p>86.0/100</p>
+            <p>{movie.vote_average}/10.0</p>
           </span>
           <span className='tomato-wrapper'>
             <img src='tomato.png' alt='tomato logo' />
