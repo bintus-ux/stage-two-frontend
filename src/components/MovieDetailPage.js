@@ -97,7 +97,7 @@ const MovieDetailPage = () => {
           <div className='movie-detail-wrapper'>
             <div className='movie-detail-column'>
               <ul className='inline-list'>
-                <li data-testid='movie-title'>{movieData.original_title}</li>
+                <li data-testid='movie-title'>{movieData.title}</li>
                 <li data-testid='movie-release-date'>
                   {movieData.release_date?.split('-')[0]}
                 </li>
